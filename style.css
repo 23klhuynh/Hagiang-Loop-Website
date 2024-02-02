@@ -1,0 +1,131 @@
+
+.container-fluid{
+    width: 100%;
+}
+/* .container .row .col .navbar .navbar-nav .nav-item .nav-link{
+    width: 20%;
+} */
+.container-fluid .row .col .navbar .navigation li:hover{
+    background-color: whitesmoke;
+    border-radius: 1px;
+}
+
+/* .container-fluid .row .col .navbar .navbar-nav .img{
+    transform: translate(-25%, -20%);
+} */
+
+/* //////////// */
+.blogs .container-fluid .image{
+    position: relative;
+    overflow: hidden;
+    max-height: 75vh;
+ }
+
+ .blogs .container-fluid .image img{
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%);
+ }
+ .blogs .container-fluid .image .text-center{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: rgba(58, 134, 172, 0.5)
+ }
+
+
+/* ////////////////////////////////////// */
+
+.blogs-1{
+    margin-top: 50px;
+}
+
+
+/* /////////// */
+
+.blogs .container .row .col .card .custom-img-height{
+    height: 250px;
+}
+
+/* /////// */
+
+.special{
+    position: relative;
+}
+/* .special .heading::after, .special .heading::before{
+    content: ' ---------------------------------------------------------------------------------';
+    transform: translateY(18%);
+    
+} */
+/* .special .heading::after, .special .heading{
+    background-color: rgb(227, 222, 222);
+    
+} */
+/* .special{
+    background-color: rgb(233, 230, 230);
+} */
+
+.special .content::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 50%;
+    border-left: 2px solid black;
+}
+.special .content .start::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    bottom: 0%;
+    left: 50%;
+    width: 10px;
+    height:10px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(-45%);
+}
+.special .content .end::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    bottom: 0%;
+    left: 50%;
+    width: 10px;
+    height:10px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(-45%);
+}
+.special .content .row .col-5 .card{
+    transform: transform 1.5s ease-in-out;
+}
+
+.special .content .row .col-5 .card:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+/* ///////////////////// */
+
+.payment .container .row .col .card img{
+    height: 200px;
+}
+.payment .container .row .col .card{
+    overflow: hidden;
+}
+.payment .container .row .col .card img{
+    transform-origin: center bottom ;
+    transition: transform 1.1s ease;
+    transform: translateZ(0);
+}
+.payment .container .row .col .card img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.payment .container .row .col .card .card-body .small{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
